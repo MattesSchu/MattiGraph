@@ -1,11 +1,12 @@
+const path = require('path');
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  title: 'Mattis Dijkstra algorithm',
+  tagline: 'Graph is coming',
+  url: 'https://mattesschu.github.io',
+  baseUrl: '/Dijkstra/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'MattesSchu',
+  projectName: 'Dijkstra',
   themeConfig: {
     navbar: {
       title: 'My Site',
@@ -101,5 +102,8 @@ module.exports = {
         },
       },
     ],
+  ],
+  plugins: [
+    path.resolve(__dirname, './node_modules/docusaurus-lunr-search/')
   ],
 };
